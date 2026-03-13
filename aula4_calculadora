@@ -1,0 +1,117 @@
+print('''  
+      =========================================
+      |              CALCULADORA              |
+      |                                       |
+      | [1] Soma                              |
+      | [2] Subtração                         |
+      | [3] Multiplicação                     |
+      | [4] Divisão                           |
+      | [5] Exponenciação                     |
+      | [6] Raiz                              |
+      | [7] Função afim                       |
+      | [8] Função quadrática                 |
+      | [9] Fibonacci                         |
+      | [10] Fatorial                         |
+      | [11] Histórico                        |
+      | Digite qualquer outro valor para sair |
+      =========================================
+''')
+resp = "s"
+opc = int(input("Selecione uma opção: "))
+if opc == 1:
+    print("SOMA")
+    print(" ")
+    while resp == "s":
+        n1 = float(input("Digite o 1º número: "))  
+        n2 = float(input("Digite o 2º número: " ))
+        print(f"{n1} + {n2} = ", n1 + n2)
+        resp = input("Deseja continuar? [s/n] \n")
+elif opc == 2:
+    print("SUBTRAÇÃO")
+    print(" ")
+    while resp == "s":
+        n1 = float(input("Digite o 1º número: "))  
+        n2 = float(input("Digite o 2º número: " ))
+        print(f"{n1} - {n2} = ", n1 - n2)
+        resp = input("Deseja continuar:? [s/n] \n")
+elif opc == 3:
+    print("MULTIPLICAÇÃO")
+    print(" ")
+    while resp == "s":
+        n1 = float(input("Digite o 1º número: "))  
+        n2 = float(input("Digite o 2º número: " ))
+        print(f"{n1} x {n2} = ", n1 * n2)
+        resp = input("Deseja continuar:? [s/n] \n")
+elif opc == 4:
+    print("DIVISÃO \n")
+    while resp == "s":
+        n1 = float(input("Dividendo: "))  
+        n2 = float(input("Divisor: " ))
+        print(f"{n1} / {n2} = ", n1/n2)
+        resp = input("Deseja continuar:? [s/n] \n")  
+elif opc == 5:
+    print("EXPONENCIAÇÃO \n")
+    while resp == "s":
+        base = float(input("Base: "))  
+        expoente = float(input("Expoente: " ))
+        print(f"{base} ^ {expoente} = ", base**expoente)
+        resp = input("Deseja continuar:? [s/n] \n")
+elif opc == 6:
+    print("RAIZ \n")
+    while resp == "s":
+        radicando = int(input("Radicando: "))  
+        indice = int(input("Índice: " ))
+        print(f"{radicando} ^ 1/{indice} = ", radicando**(1/indice))
+        resp = input("Deseja continuar:? [s/n] \n")
+elif opc == 7:
+    print("FUNÇÃO AFIM [a*(x) + b] \n")
+    while resp == "s":
+        a = float(input("Escolha o coeficiente angular (a != 0): "))  
+        b = float(input("Escolha o coeficiente linear (b): " ))
+        x = float(input("Defina o x: "))
+        print(f"{a} * {x} + {b} = ", a * x + b)
+        resp = input("Deseja continuar:? [s/n] \n")
+elif opc == 8:
+    print("FUNÇÃO QUADRÁTICA [a*(x^2) + b*(x) + c] \n")
+    while resp == "s":
+        a = float(input("Escolha o coeficiente a (a != 0): "))  
+        b = float(input("Escolha o coeficiente b: " ))
+        c = float (input("Escolha o termo c: "))
+        x = float(input("Defina o x: "))
+        print(f"{a} * {x}^2 + {b} * {x} + {c} = ", a*(x**2) + b*x + c)
+        delta = b**2 - 4*a*c
+        if delta >= 0:
+            x1 = (-b + delta**0.5)/(2*a)
+            x2 = (-b - delta**0.5)/(2*a)
+            print(f"Raízes da função: x1 = {x1} e x2 = {x2}")
+        else:
+            print("Esta função não possui raízes no conjunto dos reais.")
+        resp = input("Deseja continuar:? [s/n] \n")
+elif opc == 9:
+    print("FIBONACCI \n")
+    while resp == "s":
+        n = int(input("Quantos números da sequência de Fibonacci você deseja visualizar? "))
+        soma = 0
+        num1 = 0
+        num2 = 1
+        print(num1)
+        print(num2)
+        for cont in range(3, n+1):
+            soma = num1 + num2
+            print(soma)
+            num1 = num2
+            num2 = soma
+        resp = input("Deseja continuar? [s/n] \n")
+elif opc == 10:
+    print("FATORIAL \n")
+    while resp == "s":
+        n = int(input("Fatorial do número (número > 0): "))
+        f = n
+        for cont in range(n, 1, -1):
+            n *= (cont - 1)
+        print(f"{f}! = {n}")
+        resp = input("Deseja continuar? [s/n]")
+elif opc == 11:
+    print("HISTÓRICO")
+else:
+    print("Saindo...")
