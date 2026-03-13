@@ -10,4 +10,5 @@ print(f"Lista final: {lista}")
 soma = 0
 for i in lista:
     soma += i
+
 print(f"Soma de todos os números da lista: {soma}")
