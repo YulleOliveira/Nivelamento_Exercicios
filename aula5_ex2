@@ -1,0 +1,16 @@
+lista = []
+print("Crie uma lista de números: \n")
+resp = "s"
+while resp == "s":
+    n = int(input("Digite um número: "))
+    lista.append(n)
+    print("Lista criada até o momento: ", lista)
+    resp = input("Deseja continuar? [s/n] \n")
+print(f"Lista final: {lista}")
+for i in lista:
+    if lista[i] >= lista[i+1]:
+        maior = lista[i]
+    if lista[i] <= lista[i+1]:
+        menor = lista[i]
+print(f"Maior número da lista: {maior}")
+print(f"Menor número da lista: {menor}")
