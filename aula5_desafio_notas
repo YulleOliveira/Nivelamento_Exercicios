@@ -1,0 +1,35 @@
+lista_notas = []
+lista_notas_final = []
+lista_situacao = []
+n_alunos = int(input("Número de alunos: "))
+for cont in range (1, n_alunos + 1):
+    nota = int(input(f"Nota do aluno {cont}: "))
+    lista_notas.append(nota)
+    if nota < 0 or nota > 100:
+        print("Valor inválido")
+    else:
+        if nota < 38:
+            situacao = "Reprovado"
+            nota_final = nota 
+        else :
+            situacao = "Aprovado"
+            if (nota+1) % 5 == 0 or (nota+2) % 5 == 0:
+                if (nota + 1) % 5 == 0:
+                    nota_final = nota + 1
+                else:                
+                    nota_final = nota + 2
+            else:
+                nota_final = nota
+    lista_situacao.append(situacao)
+    lista_notas_final.append(nota_final)
+print("NOTAS INICIAIS: \n")
+for i in lista_notas:
+    print(i)
+print(" ")
+print("NOTAS FINAIS: \n")
+for i in lista_notas_final:
+    print(i)
+print(" ")
+print("SITUAÇÃO DO ALUNO: \n")
+for i in lista_situacao:
+    print(i)
