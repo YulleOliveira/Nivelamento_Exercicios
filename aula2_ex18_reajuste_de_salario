@@ -1,0 +1,3 @@
+sal_atual = float(input("Salário atual do funcionário: R$"))
+percentual = float(input("Percentual de reajuste(%): "))
+print(f"O novo salário do funcionário é: R${sal_atual * (1 + (percentual/100)):.2f}")

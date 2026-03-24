@@ -1,0 +1,2 @@
+km = float(input("Informe o valor em quilômetros(km): "))
+print(f"{km}km = {(km*0.62):.2f} milhas")
