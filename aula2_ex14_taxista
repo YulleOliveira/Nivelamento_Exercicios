@@ -1,0 +1,2 @@
+dias = int(input("Quantidade de dias por mês que você trabalha: "))
+print(f"Salário no período: R${160 * dias}")

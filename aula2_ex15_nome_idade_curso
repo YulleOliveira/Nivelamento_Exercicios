@@ -1,0 +1,4 @@
+nome = input("Nome: ")
+idade = int(input("Idade: "))
+curso = input("Curso: ")
+print(f"Olá, {nome}! Você tem {idade} anos e faz {curso}!")

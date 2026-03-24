@@ -1,0 +1,4 @@
+sal_bruto = float(input("Salário bruto: "))
+desconto = float(input("Desconto (%): "))
+restante = 100 - desconto
+print(f"Salário líquido: {sal_bruto * (restante/100)}")
