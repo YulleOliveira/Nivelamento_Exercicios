@@ -1,0 +1,42 @@
+resp = "s"
+while resp == "s":
+
+    opc = int(input('''
+    ---------------------
+         CALCULADORA
+    ---------------------
+    Escolha a operação que deseja realizar: 
+            
+    [1] Adição
+    [2] Subtração 
+    [3] Multiplicação
+    [4] Divisão
+    [0] Sair \n'''))
+
+    if opc == 1:
+        num1 = float(input("Informe o 1º número: "))
+        num2 = float(input("Informe o 2º número: "))
+        print(f"Soma: {num1} + {num2} = {num1 + num2}")
+        resp = input("Deseja continuar? [s/n] ")
+
+    elif opc == 2:
+        num1 = float(input("Informe o 1º número: "))
+        num2 = float(input("Informe o 2º número: "))
+        print(f"Subtração: {num1} - {num2} = {num1 - num2}")
+        resp = input("Deseja continuar? [s/n] ")
+
+    elif opc == 3:
+        num1 = float(input("Informe o 1º número: "))
+        num2 = float(input("Informe o 2º número: "))
+        print(f"Multiplicação: {num1} x {num2} = {num1 * num2}")
+        resp = input("Deseja continuar? [s/n] ")
+
+    elif opc == 4:
+        num1 = float(input("Informe o 1º número: "))
+        num2 = float(input("Informe o 2º número: "))
+        print(f"Divisão: {num1}/{num2} = {num1/num2}")
+        resp = input("Deseja continuar? [s/n] ")
+
+    else:
+        print("Inválido. Informe que não quer continuar ou escolha uma das opções da calculadora.")
+        resp = input("Deseja continuar? [s/n] ")

@@ -1,0 +1,5 @@
+macas = int(input("Quantidade de maçãs: "))
+if macas >= 12:
+    print(f"Valor total da compra: R${(macas * 0.45):.2f}")
+else:
+    print(f"Valor total da compra: R${(macas * 0.5):.2f}")

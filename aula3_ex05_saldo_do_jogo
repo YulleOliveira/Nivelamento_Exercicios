@@ -1,0 +1,10 @@
+abates = int(input("Número de abates: "))
+assistencias = int(input("Número de assistências: "))
+mortes = int(input("Número de mortes: "))
+saldo = abates + assistencias - mortes
+if saldo > 0:
+    print(f"Saldo positivo = {saldo}")
+elif saldo < 0:
+    print(f"Saldo negativo = {saldo}")
+else:
+    print("Saldo neutro = 0")

@@ -1,0 +1,13 @@
+h = float(input("Informe a altura: "))
+if h < 1.2:
+    print("Entrada negada.")
+elif h >= 1.2 and h <= 1.5:
+    resp = (input("A criança está acompanhada de um responsável? [s/n] "))
+    if resp == "s":
+        print("Entrada concedida!")
+    elif resp == "n":
+        print("Entrada negada.")
+    else:
+        print("Resposta inválida.")
+else:
+    print("Entrada concedida!")

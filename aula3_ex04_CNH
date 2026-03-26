@@ -1,0 +1,6 @@
+ano_atual = int(input("Digite o ano atual: "))
+ano_nasc = int(input("Digite seu ano de nascimento: "))
+if ano_atual - ano_nasc >= 18:
+    print(f"Você tem {ano_atual - ano_nasc} ano(s) e já pode tirar a sua CNH!")
+else:
+    print(f"Você tem {ano_atual - ano_nasc} ano(s) e ainda não pode tirar a sua CNH.")
