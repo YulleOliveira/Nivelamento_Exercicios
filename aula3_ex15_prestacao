@@ -1,0 +1,6 @@
+salario = float(input("Salário bruto: "))
+prestacao = float(input("Valor da prestação: "))
+if prestacao <= salario/4:
+    print("O empréstimo pode ser concedido!")
+else:
+    print("O empréstimo não pode ser concedido.")
